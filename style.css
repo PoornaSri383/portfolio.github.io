@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/* background */
+.hero{
+    position: relative;
+    overflow-x: hidden;
+    background-image: url(https://cdn.wallpapersafari.com/58/82/gsLD2Z.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+.nav-logo img{
+    width: 140px;
+}
+
+.nav-bar{
+   /* padding: 40px 120px; */
+   padding: 2% 6%;
+    display: flex;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul{
+    margin-left: 20px;
+    display: inline;
+    
+}
+
+.nav-links ul a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-links ul li{
+   /* display: inline; */
+    display: inline-block;
+    padding: 8px 15px;
+    list-style: none;
+    position: relative;
+}
+
+.nav-links ul a:hover{
+    color: #FBA81F;
+}
+
+.details{
+    color: aliceblue;
+    margin-left: 7%;
+    margin-top: 10%;
+    width: 90%;
+}
+
+.details h1{
+    font-size: 41px;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.details h2{
+    font-size: 27px ;
+    margin-bottom: 10px;
+}
+
+.details p{
+    color: aliceblue;
+    font-size: 22px;
+}
+
+span{
+    color: #FBA81F;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 90%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.nav-bar .fa{
+    display: none;
+ }
+
+ #about{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+ }
+ .about-section{
+    background: url(https://images.idgesg.net/images/article/2019/11/16in-macbook-pro-angle-100818635-large.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: white;
+    overflow: hidden;
+    padding: 100px 0;
+ }
+ .inner-container{
+    width: 55%;
+    float: right;
+    padding: 45px;
+    background-color: white;
+ }
+ .inner-container h1{
+    margin-bottom: 30px;
+    font-weight: 700;
+ }
+ .text{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+ }
+
+@media(max-width: 900px) {
+    .images img{
+        display: none; 
+        width: 0%
+    }
+    .nav-links{
+        position: absolute;
+        background: #e09f36;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul a{
+        font-size: 18px;
+    }
+    .nav-links ul a:hover{
+        color: black;
+    }
+  
+    .nav-bar .fa{
+        display: block;
+        color: black;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+     }
+}
+
+@media screen and (max-width: 1200px){
+    .inner-container{
+       padding: 80px;
+    }
+ }
+ @media screen and (max-width: 1000px){
+    .about-section{
+       background-size: 100%;
+       padding: 100px 40px;
+    }
+    .inner-container{
+       width: 100%;
+    }
+ }
+ @media screen and (max-width: 600px){
+   .about-section{
+      padding: 0;
+   }
+   .inner-container{
+    padding: 25px;
+    border: 10px;
+    background-color:aliceblue;
+    width: 100%;
+   }
+   #about{
+    height: 10px;
+    background-color: aliceblue;
+ 
+   }
+ }
+ @media screen and (max-width: 490px){
+    .about-section{
+       padding: 0;
+    }
+    .text{
+       width: 100%;
+    }
+    .inner-container{
+       height: 50%;
+    }
+ }
+
+ .footer-container{
+    background-color: aliceblue;
+    padding-bottom: 15px;
+    padding-top: 15px;
+ }
+ .footer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+ }
+ .footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+ }
+ .footer-heading h2{
+    margin-bottom: 2rem;
+ }
+ .footer-2  a{
+    width: 80%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+ }
+ 
+ .footer-heading:hover{
+    color: #FBA81F;
+    cursor: pointer;
+ }
+ @media screen and (max-width: 925px){
+    .footer-3{
+       display: none;
+    }
+ }
+ @media screen and (max-width: 750px){
+    .footer{
+       padding-top: 2rem;
+    }
+    .footer-container{
+       height: 525px;
+       width: 400px;
+    }
+    .footer-heading{
+       font-size: 30px;
+    }
+ }
+ @media screen and (max-width: 400px){
+    .footer-container{
+       background-color: aliceblue;
+       padding-left: 10px;
+       
+    }
+ }
+ 
+#martial-arts {
+   background-color: black;
+}
+
+#martial-arts h1{
+   color: white;
+   text-align: center;
+}
+
+#martial-arts h3{
+     color: white;
+     text-align: center;
+}
+
+#martial-arts a{
+   text-decoration: none;
+   color: white;
+   text-align: center;
+}
+

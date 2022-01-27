@@ -1,0 +1,116 @@
+<html>
+
+<head>
+
+<title> portfolio </title>
+<meta name= "view-port" content="width= device-width , initial-scale= 1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<section id="home">
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+               <img src="images/logo.jpg">
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close"onclick="closeMenu()"></i>
+                
+                
+              <ul>
+                <a href="#home"><li>HOME</li></a>
+                <a href="#about"><li>ABOUT</li></a> 
+                <a href="#martial-arts"><li>MARTIAL-ARTS</li></a>  
+                <a href="#contact"><li>CONTACT</li></a>    
+              </ul>
+
+            </div>
+        
+        
+        <i class="fa fa-bars" onclick="showMenu()" style="color: aliceblue;"></i>
+       
+
+        </div>
+
+        <div class="details">
+            <h1>Hi,I am <span>Poorna Sri</span></h1>
+             
+            <h2>Frontend Developer</h2>
+
+            <p> This is my official portfolio website to  show
+             <br>    u all my works in Web Development</p>
+        </div>
+
+        <div class="images">
+            <img src="images/girl.jpg" class="girl">
+        </div>
+
+    </div>
+</section>
+
+    <section id="about">
+        <div class="about-section">
+          <div class="inner-container">
+            <h1>About Me</h1>
+            <p class="text">
+              I am a student pursuing B-Tech Second year in Computer Science Engineering in Shri Vishnu Engineering College for Women.I know programming languages like C ,python.I am interested in solving math puzzles and I also love to play
+              badminton.
+            </p>
+          </div>
+        </div>
+    </section>
+
+
+    <section id="martial-arts">
+      <h1>Martial-arts game</h1>
+      <h3>This is martial arts game.Click below  to view it</h3>
+      <a href="https://poornasri383.github.io/martialArts.github.io/">Click here</a>
+    </section>
+
+  
+    <section id="contact">
+    <div class="footer-container">
+      <div class="footer">
+        <div class="footer-heading footer-1">
+          <h2>LOCATION</h2>
+          <p>St.Mary's High School</p>
+          <p>Bhimavaram</p>
+          <p>Andhra Pradesh</p>
+        </div>
+        <div class="footer-heading footer-2">
+          <h2>AROUND THE WEB</h2>
+          <a target="_blank" href="https://twitter.com/login?lang=en"><img class="web" src="https://pureoxygenlabs.com/wp-content/uploads/2016/09/twitter-icon250x250.png" width="38" height="38"></a>
+       <a target="_blank" href="https://www.instagram.com/"><img class="web" src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_1280.jpg" width="38" height="38"></a>
+       <a target="_blank" href="https://in.linkedin.com/"><img class="web" src="http://lofrev.net/wp-content/photos/2017/04/linkedin_logo.jpg" width="38" height="38"></a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h2>ABOUT US</h2>
+          <p>student at SVECW</p>
+        </div>
+      </div>
+      
+    </div>
+
+  </section>  
+    
+
+    <script>
+        var show = document.getElementById("nav-links");
+        function showMenu(){
+            show.style.right = "0";
+        }
+        function closeMenu(){
+            show.style.right = "-200px"
+        }
+    </script>
+</body>
+
+
+
+
+</html>
